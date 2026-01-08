@@ -7111,7 +7111,7 @@ func TestSanitizeSNSConfig(t *testing.T) {
 					{
 						SNSConfigs: []*snsConfig{
 							{
-								APIUrl: "not-a-valid-url",
+								APIUrl:   "not-a-valid-url",
 								TopicARN: "arn:aws:sns:us-east-1:123456789012:test",
 							},
 						},
@@ -7128,7 +7128,7 @@ func TestSanitizeSNSConfig(t *testing.T) {
 					{
 						SNSConfigs: []*snsConfig{
 							{
-								APIUrl: "https://sns.us-east-1.amazonaws.com",
+								APIUrl:   "https://sns.us-east-1.amazonaws.com",
 								TopicARN: "arn:aws:sns:us-east-1:123456789012:test",
 							},
 						},
